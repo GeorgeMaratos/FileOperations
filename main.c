@@ -7,5 +7,5 @@ main(int argc, char **argv)
 {
   //variables
   //ops
-  toScreen(argv[1]);
+  toFile(argv[1]);
 }
