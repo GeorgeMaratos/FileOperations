@@ -19,11 +19,7 @@ toScreen(char *fileName)
   }
   else
   {
-    for(;;)
-    {
-      fscanf(f, "%c", &input);
-      if(input == '\0') return;
-      else printf("%c", input);
-    }
+    while(fscanf(f, "%c", &input) != EOF)
+      printf("%c", input);
   }
 }
